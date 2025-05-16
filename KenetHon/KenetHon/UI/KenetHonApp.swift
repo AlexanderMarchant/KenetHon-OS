@@ -15,18 +15,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+@main
+struct KenetHonApp: App {
+    @StateObject var locationService: LocationService = LocationService()
+    var body: some Scene {
+        WindowGroup {
+            MapView(locationService: locationService)
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }

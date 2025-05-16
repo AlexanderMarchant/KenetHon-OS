@@ -13,13 +13,18 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import SwiftUI
+import CoreLocation
 
-@main
-struct KenetHonApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+extension CLAuthorizationStatus {
+    var isAuthorized: Bool {
+        switch self {
+        case .authorizedAlways, .authorizedWhenInUse:
+            return true
+        case .notDetermined, .denied, .restricted:
+            return false
+        default:
+            assertionFailure("Unhandled CLAuthorizationStatus: \(self)")
+            return false
         }
     }
 }
