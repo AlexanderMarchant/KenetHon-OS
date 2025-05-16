@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>FILEHEADER</key>
+    <string> Copyright (c) ___YEAR___ Alex Marchant
+//
+// This file is part of ___PACKAGENAME___.
+//
+// ___PACKAGENAME___ is licensed under the Mozilla Public License, v. 2.0.
+// You may obtain a copy of the License at:
+//
+//   http://opensource.org/licenses/MPL-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" basis,
+// without warranties or conditions of any kind, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+</string>
+</dict>
+</plist>
